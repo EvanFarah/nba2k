@@ -1,0 +1,12 @@
+{
+  "name": "nba_2k",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server"
+  },
+  "keywords": [],
+  "author": "Yicheng Gong",
+  "license": "ISC"
+}
