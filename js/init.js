@@ -1,0 +1,1 @@
+initPlayersFromFile(playerPath);
