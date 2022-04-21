@@ -1,7 +1,76 @@
-<!doctype html>
-<head>
-	<meta charset="UTF-8">
+howtoplay = { 
+<script>
+	alert("type uppercase h on your keyboard if you have on connected to your, device.")
+	       if (event.key == "H"){
+		       const devicename = ("keyboard")
 
+		       
+		       
+		       
+		       
+		       
+		       
+		       
+<!var gamepadAPI = {
+  controller: {},
+  turbo: false,
+  connect: function() {},
+  disconnect: function() {},
+  update: function() {},
+  buttonPressed: function() {},
+  buttons: [],
+  buttonsCache: [],
+  buttonsStatus: [],
+  axesStatus: []
+buttons: [
+  'DPad-Up','DPad-Down','DPad-Left','DPad-Right',
+  'Start','Back','Axis-Left','Axis-Right',
+  'LB','RB','Power','A','B','X','Y',
+],
+buttonPressed: function(button, hold) {
+  var newPress = false;
+  // loop through pressed buttons
+  for(var i=0,s=gamepadAPI.buttonsStatus.length; i<s; i++) {
+    // if we found the button we're looking for...
+    if(gamepadAPI.buttonsStatus[i] == button) {
+      // set the boolean variable to true
+      newPress = true;
+      // if we want to check the single press
+      if(!hold) {
+        // loop through the cached states from the previous frame
+        for(var j=0,p=gamepadAPI.buttonsCache.length; j<p; j++) {
+          // if the button was already pressed, ignore new press
+          if(gamepadAPI.buttonsCache[j] == button) {
+            newPress = false;
+          }
+        }
+      }
+    }
+  };
+  return newPress;
+	alert("press x on your controoler if it is, connected to your, device.")  
+	if(gamepadAPI.buttonPressed('x')) {
+    const devicename = ("controller");
+	  else{
+	       const devicename = ("mobile");
+  }
+    }
+	{
+	 if devicename = ("keyboard"){
+           alert(keyboardhowtoplay)
+	 }
+	  if devicename = ("controller"){
+		  alert(howtoplaycontroller)
+	  }
+	 if devicename = ("mobile"){
+		 alert(howtoplaymobile)
+	 }
+	  }
+}
+	<meta charset="UTF-8">
+    
+	
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
